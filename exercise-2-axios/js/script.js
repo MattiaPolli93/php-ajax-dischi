@@ -8,8 +8,8 @@ const app = new Vue({
         order: true
     },
     mounted() {
-        axios.get("https://flynn.boolean.careers/exercises/api/array/music").then((result) => {
-            this.musicAlbums = result.data.response;
+        axios.get("http://localhost/php-ajax-dischi/database.php").then((result) => {
+            this.musicAlbums = result.data;
         });
     },
     computed: {
