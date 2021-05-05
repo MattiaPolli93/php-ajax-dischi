@@ -8,7 +8,7 @@ const app = new Vue({
         order: true
     },
     mounted() {
-        axios.get("http://localhost/php-ajax-dischi/database.php").then((result) => {
+        axios.get("http://localhost/php-ajax-dischi/exercise-2-axios/server.php").then((result) => {
             this.musicAlbums = result.data;
         });
     },
